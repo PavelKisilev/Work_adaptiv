@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 1600px;
+  margin: 0 auto;
+}
+
+/* 1. Cтили для header deskTop*/
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 859px;
+  background: #222222;
+  width: 1600px;
+  height: 75px;
+}
+
+.img01 {
+  display: flex;
+  gap: 41px;
+}
+.img02 {
+  display: flex;
+  gap: 33px;
+}
+.imgSize01 {
+  margin: 18px 0 19px 0;
+}
+.imgSize02 {
+  margin: 28px 0 20px 0;
+}
+.imgSize03 {
+  margin: 30px 0 22px 0;
+}
+.imgSize04 {
+  margin: 26px 0 20px 0;
+}
+.imgSize05 {
+  margin: 26px 0 20px 0;
+}
+
+/* 2. Cтили для main deskTop*/
+
+main {
+  display: flex;
+  justify-content: space-between;
+  background: #f1e4e6;
+}
+
+.mainLeft {
+  height: 764px;
+  width: 800px;
+}
+
+.mainRight {
+  border-left: 12px solid #f16d7f;
+  padding: 0 0 0 16px;
+  margin: 290px 331px 381px 63px;
+}
+
+.mainRightTex {
+  display: flex;
+  flex-direction: row;
+}
+.mainRightTop {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 58px;
+  color: #222222;
+}
+
+.mainRightBottom1 {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 38px;
+  color: #222222;
+}
+
+.mainRightBottom2 {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 38px;
+  color: #f16d7f;
+}
+
+/* 2. Cтили для section blok01*/
+
+.blok01 {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr;
+  gap: 30px;
+  margin: 65px 230px 96px 230px;
+}
+
+.blok01Accesories {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+/* 3. Cтили для feturedShop*/
+
+.feturedShop {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.fetured {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+  color: #222222;
+}
+
+.shop {
+  ont-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #9f9f9f;
+  margin: 6px 0 48px 0;
+}
+
+/* 4. Cтили для blok02*/
+
+.blok02 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 30px;
+  justify-items: center;
+  margin: 0 230px 0 230px;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #f8f8f8;
+  width: 360px;
+}
+
+.card > h2 {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: #000000;
+  flex: none;
+  flex-grow: 0;
+  margin: 25px 0 0 19px;
+}
+
+.card > p {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #5d5d5d;
+  flex: none;
+  flex-grow: 0;
+  margin: 16px 0 16px 19px;
+}
+
+.money {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #f16d7f;
+  margin: 19px 0 20px 19px;
+}
+
+button {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  margin: 49px 0 60px 0;
+  border: 1px solid #ff6a6a;
+  padding: 14.5px 38.5px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #f26376;
+  background-color: white;
+}
+
+.img03: {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  
+}
