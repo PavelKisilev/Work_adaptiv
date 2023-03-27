@@ -106,10 +106,62 @@ main {
   margin: 65px 230px 96px 230px;
 }
 
-.blok01Accesories {
+.category-ACCESORIES {
   grid-column-start: 1;
   grid-column-end: 4;
 }
+
+
+/* 2. Cтили для section blok01, накладывание картинок*/
+
+.category-women {
+  background-image: url(./img/07_OfferForWomen.svg);
+  width: 360px;
+  height: 260px;
+}
+
+.category-men {
+  background-image: url(./img/07_OfferForMen.svg);
+  width: 360px;
+  height: 260px;
+}
+
+.category-KIDS {
+  background-image: url(./img/07_OfferForKids.svg);
+  width: 360px;
+  height: 260px;
+}
+
+.category-ACCESORIES {
+  background-image: url(./img/07_OfferAccesories.svg);
+  width: 1140px;
+  height: 180px;
+}
+
+.category-bg {
+  background: rgba(33, 22, 22, 0.7);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.category-text {
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+}
+
+.category-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #f16d7f;
+}
+
 /* 3. Cтили для feturedShop*/
 
 .feturedShop {
@@ -143,7 +195,8 @@ main {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 30px;
-  justify-items: center;
+  /* justify-items: center; */
+  justify-content: center;
   margin: 0 230px 0 230px;
 }
 
@@ -314,6 +367,30 @@ button {
     height: 116px;
   }
 
+  .category-women {
+    background-image: url(./img/07_OfferForWomen.svg);
+    width: 231px;
+    height: 167px;
+  }
+  
+  .category-men {
+    background-image: url(./img/07_OfferForMen.svg);
+    width: 231px;
+    height: 167px;
+  }
+  
+  .category-KIDS {
+    background-image: url(./img/07_OfferForKids.svg);
+    width: 231px;
+    height: 167px;
+  }
+  
+  .category-ACCESORIES {
+    background-image: url(./img/07_OfferAccesories.svg);
+    width: 734px;
+    height: 116px;
+  }
+
   /* 3. Cтили для feturedShop*/
 
   .feturedShop {
@@ -406,4 +483,239 @@ button {
     color: #f26376;
     background-color: white;
   }
+}
+
+
+
+
+
+
+
+/* мобильная версия */
+
+@media (max-width: 375px) {
+
+  body {
+    width: 375px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+  
+  /* 1. Cтили для header mobily*/
+  
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+    background: #222222;
+    width: 375px;
+    height: 74px;
+  }  
+  .img01 {
+    display: flex;
+    gap: 41px;
+    margin: 18px 0 18px 16px
+  }
+  .img02 {
+    display: flex;
+    gap: 33px;
+  }
+  .imgSize01 {
+    margin: 18px 0 19px 0;
+  }
+  .imgSize02 {
+    margin: 28px 0 20px 0;
+  }
+  .imgSize03 {
+    margin: 30px 0px 22px 0;
+  }
+  .imgSize04 {
+    margin: 26px 26px 20px 0;
+    display: none;
+  }
+  .imgSize05 {
+    margin: 26px 0 20px 0;
+    display: none;
+  }
+  
+  /* 2. Cтили для main mobily*/
+  
+  main {
+    display: flex;
+    justify-content: space-between;
+    background: #f1e4e6;
+    height: 363px;
+    width: 375px;
+  }
+  
+  .mainLeft {
+    height: 363px;
+    width: 375px;
+    display: none;
+  }
+  
+  .mainRight {
+    border-left: 12px solid #f16d7f;
+    padding: 0 0 0 12px;
+    margin: 148px 56px 149px 56px;
+  }
+  
+  .mainRightTex {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .mainRightTop {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 38px;
+    line-height: 45px;
+    color: #222222;
+  }
+
+  .mainRightBottom1 {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 24px;
+    color: #222222;
+  }
+  
+  .mainRightBottom2 {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 24px;
+    color: #f16d7f;
+  }
+  
+  /* 2. Cтили для section blok01*/
+  
+  .blok01 {
+    display: grid;
+    /* justify-items: center; */
+    justify-content: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 32px;
+    margin: 16px 64px 16px 64px;
+  }
+  
+  .category-ACCESORIES {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  
+  
+  /* 2. Cтили для section blok01, накладывание картинок*/
+  
+  .category-women {
+    background-image: url(./img/07_OfferForWomen.svg);
+    width: 343px;
+    height: 247px;
+  }
+  
+  .category-men {
+    background-image: url(./img/07_OfferForMen.svg);
+    width: 343px;
+    height: 247px;
+  }
+  
+  .category-KIDS {
+    background-image: url(./img/07_OfferForKids.svg);
+    width: 343px;
+    height: 247px;
+  }
+  
+  .category-ACCESORIES {
+    background-image: url(./img/07_OfferAccesories.svg);
+    width: 343px;
+    height: 111px;
+  }
+  
+  .category-text {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  
+  .category-title {
+    font-size: 18px;
+    line-height: 21px;
+  }
+  
+  /* 3. Cтили для feturedShop*/
+  .shop {
+    margin: 6px 0 64px 0;
+  }
+  /* 4. Cтили для blok02*/
+  
+  .blok02 {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    gap: 35px;
+    margin: 0 8px 0 8px;
+  }
+
+  button {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin: 41px 90px 85px 74px;
+    width: 211px;
+    height: 47px;
+  }
+  
+  .blackgirl{
+    display: block;
+    background-color: rgba(33, 22, 22, 0.7);
+    z-index: 1;
+        cursor: pointer;
+  }
+
+  /* .blackgirl {
+    background: rgba(33, 22, 22, 0.7);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 1;
+  }
+
+
+  .category-women {
+    width: 360px;
+    height: 260px;
+  }
+  
+  .blackgirl {
+    background: rgba(33, 22, 22, 0.7);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .category-text {
+    font-size: 16px;
+    line-height: 19px;
+    color: #ffffff;
+  }
+  
+  .category-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #f16d7f;
+  } */
+
+
 }
