@@ -1,0 +1,840 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 1600px;
+  margin: 0 auto;
+}
+
+/* 1. Cтили для header deskTop*/
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 859px;
+  background: #222222;
+  width: 1600px;
+  height: 75px;
+}
+
+.img01 {
+  display: flex;
+  gap: 41px;
+}
+.img02 {
+  display: flex;
+  gap: 33px;
+}
+.imgSize01 {
+  margin: 18px 0 19px 0;
+}
+.imgSize02 {
+  margin: 28px 0 20px 0;
+}
+.imgSize03 {
+  margin: 30px 0 22px 0;
+}
+.imgSize04 {
+  margin: 26px 0 20px 0;
+}
+.imgSize05 {
+  margin: 26px 0 20px 0;
+}
+
+/* 2. Cтили для main deskTop*/
+
+main {
+  display: flex;
+  justify-content: space-between;
+  background: #f1e4e6;
+}
+
+.mainLeft {
+  height: 764px;
+  width: 800px;
+}
+
+.mainRight {
+  border-left: 12px solid #f16d7f;
+  padding: 0 0 0 16px;
+  margin: 290px 331px 381px 63px;
+}
+
+.mainRightTex {
+  display: flex;
+  flex-direction: row;
+}
+.mainRightTop {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 58px;
+  color: #222222;
+}
+
+.mainRightBottom1 {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 38px;
+  color: #222222;
+}
+
+.mainRightBottom2 {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 38px;
+  color: #f16d7f;
+}
+
+/* 2. Cтили для section blok01*/
+
+.blok01 {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr;
+  gap: 30px;
+  margin: 65px 230px 96px 230px;
+}
+
+.category-ACCESORIES {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+/* 2. Cтили для section blok01, накладывание картинок*/
+
+.category-women {
+  background-image: url(./img/07_OfferForWomen.svg);
+  width: 360px;
+  height: 260px;
+}
+
+.category-men {
+  background-image: url(./img/07_OfferForMen.svg);
+  width: 360px;
+  height: 260px;
+}
+
+.category-KIDS {
+  background-image: url(./img/07_OfferForKids.svg);
+  width: 360px;
+  height: 260px;
+}
+
+.category-ACCESORIES {
+  background-image: url(./img/07_OfferAccesories.svg);
+  width: 1140px;
+  height: 180px;
+}
+
+.category-bg {
+  background: rgba(33, 22, 22, 0.7);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.category-text {
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+}
+
+.category-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #f16d7f;
+}
+
+/* 3. Cтили для feturedShop*/
+
+.feturedShop {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.fetured {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+  color: #222222;
+}
+
+.shop {
+  ont-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #9f9f9f;
+  margin: 6px 0 48px 0;
+}
+
+/* 4. Cтили для blok02*/
+
+.blok02 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 30px;
+  /* justify-items: center; */
+  justify-content: center;
+  margin: 0 230px 0 230px;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #f8f8f8;
+  width: 360px;
+}
+
+.card2 {
+  background-image: url(./img/19\ backgroundFoto.svg);
+  width: 360px;
+  height: 420px;
+}
+
+.card__photo:hover {
+  opacity: 0.4;
+}
+
+.card > h2 {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: #000000;
+  flex: none;
+  flex-grow: 0;
+  margin: 25px 0 0 19px;
+}
+
+.card > p {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #5d5d5d;
+  flex: none;
+  flex-grow: 0;
+  margin: 16px 0 16px 19px;
+}
+
+.money {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #f16d7f;
+  margin: 19px 0 20px 19px;
+}
+
+.buttonEnd {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  margin: 49px 0 60px 0;
+  border: 1px solid #ff6a6a;
+  padding: 14.5px 38.5px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #f26376;
+  background-color: white;
+}
+
+.block03 {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  gap: 30px;
+  padding: 104px 230px 104px 230px;
+  background-color: #000000;
+}
+
+.blackCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.blackCard > img {
+  margin-bottom: 12px;
+}
+
+.blackCard > h2 {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19.96px;
+  line-height: 24px;
+  color: #fbfbfb;
+}
+.blackCard > p {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13.972px;
+  line-height: 17px;
+  text-align: center;
+  color: #fbfbfb;
+}
+
+.block04 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  /* gap: 30px; */
+  justify-items: center;
+  align-items: center;
+  background-image: url(./img/18\ fon.svg);
+  width: 1600px;
+  height: 448px;
+}
+
+.Cardblock04 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Cardblock04 > h2 {
+  margin-bottom: 15px;
+}
+
+.Cardblock04 > p {
+  margin-bottom: 32px;
+}
+
+.Cardblock04 > p,
+div {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #222224;
+}
+
+.Cardblock0401 {
+  display: flex;
+
+  /* flex-direction: row;
+  justify-content: center;
+  align-items: baseline; */
+}
+.Cardblock0401 > input {
+  background: #e1e1e1;
+  width: 256px;
+  height: 49px;
+  border: none;
+  border-radius: 50px 0 0 50px;
+  padding-left: 22px;
+
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+
+  color: #222224;
+
+  opacity: 0.67;
+}
+
+.Cardblock0401 > button {
+  background: #f16d7f;
+  width: 100px;
+  height: 49px;
+  border: none;
+  border-radius: 0 50px 50px 0;
+  padding-left: 20px;
+
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+}
+
+/* Эффекты наведения */
+
+/* планшетная версия */
+
+@media (max-width: 768px) {
+  body {
+    width: 768px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+  header {
+    gap: 424px;
+    width: 768px;
+    height: 74px;
+  }
+
+  .img01 {
+    display: flex;
+    gap: 41px;
+  }
+  .img02 {
+    display: flex;
+    gap: 33px;
+  }
+  .imgSize01 {
+    margin: 18px 0 18px 0;
+  }
+  .imgSize02 {
+    margin: 28px 0 19px 0;
+  }
+  .imgSize03 {
+    margin: 32px 0 23px 0;
+  }
+  .imgSize04 {
+    margin: 27px 0 18px 0;
+  }
+  .imgSize05 {
+    margin: 27px 0 18px 0;
+  }
+
+  /* 2. Cтили для main */
+
+  main {
+    display: flex;
+    justify-content: space-between;
+    background: #f1e4e6;
+  }
+
+  .mainLeft {
+    height: 386px;
+    width: 368px;
+  }
+
+  .mainRight {
+    border-left: 12px solid #f16d7f;
+    padding: 0 0 0 16px;
+    margin: 138px 33px 151px 39px;
+  }
+
+  .mainRightTex {
+    display: flex;
+    flex-direction: row;
+  }
+  .mainRightTop {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 44px;
+    color: #222222;
+  }
+
+  .mainRightBottom1 {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 38px;
+    color: #222222;
+  }
+
+  .mainRightBottom2 {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 38px;
+    color: #f16d7f;
+  }
+
+  /* 2. Cтили для section blok01*/
+
+  .blok01 {
+    gap: 19px;
+    margin: 65px 16px 109px 16px;
+  }
+
+  .blok01img {
+    width: 231px;
+    height: 167px;
+  }
+
+  .blok01Accesories {
+    width: 734px;
+    height: 116px;
+  }
+
+  .category-women {
+    background-image: url(./img/07_OfferForWomen.svg);
+    width: 231px;
+    height: 167px;
+  }
+
+  .category-men {
+    background-image: url(./img/07_OfferForMen.svg);
+    width: 231px;
+    height: 167px;
+  }
+
+  .category-KIDS {
+    background-image: url(./img/07_OfferForKids.svg);
+    width: 231px;
+    height: 167px;
+  }
+
+  .category-ACCESORIES {
+    background-image: url(./img/07_OfferAccesories.svg);
+    width: 734px;
+    height: 116px;
+  }
+
+  /* 3. Cтили для feturedShop*/
+
+  .feturedShop {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .fetured {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    color: #222222;
+  }
+
+  .shop {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #9f9f9f;
+    margin: 6px 0 48px 0;
+  }
+
+  /* 4. Cтили для blok02*/
+
+  .blok02 {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 18px;
+    justify-items: center;
+    margin: 0 16px 0 16px;
+  }
+
+  .card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #f8f8f8;
+    width: 360px;
+  }
+
+  .card > h2 {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #000000;
+    flex: none;
+    flex-grow: 0;
+    margin: 25px 0 0 19px;
+  }
+
+  .card > p {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #5d5d5d;
+    flex: none;
+    flex-grow: 0;
+    margin: 16px 0 16px 19px;
+  }
+
+  .money {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #f16d7f;
+    margin: 19px 0 20px 19px;
+  }
+
+  .buttonEnd {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin: 49px 0 60px 0;
+    border: 1px solid #ff6a6a;
+    padding: 14.5px 38.5px;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #f26376;
+    background-color: white;
+  }
+}
+
+/* мобильная версия */
+
+@media (max-width: 375px) {
+  body {
+    width: 375px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  /* 1. Cтили для header mobily*/
+
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+    background: #222222;
+    width: 375px;
+    height: 74px;
+  }
+  .img01 {
+    display: flex;
+    gap: 41px;
+    margin: 18px 0 18px 16px;
+  }
+  .img02 {
+    display: flex;
+    gap: 33px;
+  }
+  .imgSize01 {
+    margin: 18px 0 19px 0;
+  }
+  .imgSize02 {
+    margin: 28px 0 20px 0;
+  }
+  .imgSize03 {
+    margin: 30px 0px 22px 0;
+  }
+  .imgSize04 {
+    margin: 26px 26px 20px 0;
+    display: none;
+  }
+  .imgSize05 {
+    margin: 26px 0 20px 0;
+    display: none;
+  }
+
+  /* 2. Cтили для main mobily*/
+
+  main {
+    display: flex;
+    justify-content: space-between;
+    background: #f1e4e6;
+    height: 363px;
+    width: 375px;
+  }
+
+  .mainLeft {
+    height: 363px;
+    width: 375px;
+    display: none;
+  }
+
+  .mainRight {
+    border-left: 12px solid #f16d7f;
+    padding: 0 0 0 12px;
+    margin: 148px 56px 149px 56px;
+  }
+
+  .mainRightTex {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .mainRightTop {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 38px;
+    line-height: 45px;
+    color: #222222;
+  }
+
+  .mainRightBottom1 {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 24px;
+    color: #222222;
+  }
+
+  .mainRightBottom2 {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 24px;
+    color: #f16d7f;
+  }
+
+  /* 2. Cтили для section blok01*/
+
+  .blok01 {
+    display: grid;
+    /* justify-items: center; */
+    justify-content: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 32px;
+    margin: 16px 64px 16px 64px;
+  }
+
+  .category-ACCESORIES {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  /* 2. Cтили для section blok01, накладывание картинок*/
+
+  .category-women {
+    background-image: url(./img/07_OfferForWomen.svg);
+    width: 343px;
+    height: 247px;
+  }
+
+  .category-men {
+    background-image: url(./img/07_OfferForMen.svg);
+    width: 343px;
+    height: 247px;
+  }
+
+  .category-KIDS {
+    background-image: url(./img/07_OfferForKids.svg);
+    width: 343px;
+    height: 247px;
+  }
+
+  .category-ACCESORIES {
+    background-image: url(./img/07_OfferAccesories.svg);
+    width: 343px;
+    height: 111px;
+  }
+
+  .category-text {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .category-title {
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  /* 3. Cтили для feturedShop*/
+  .shop {
+    margin: 6px 0 64px 0;
+  }
+  /* 4. Cтили для blok02*/
+
+  .blok02 {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    gap: 35px;
+    margin: 0 8px 0 8px;
+  }
+
+  .buttonEnd {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin: 41px 90px 85px 74px;
+    width: 211px;
+    height: 47px;
+  }
+
+  .blackgirl {
+    display: block;
+    background-color: rgba(33, 22, 22, 0.7);
+    z-index: 1;
+    cursor: pointer;
+  }
+
+  /* .blackgirl {
+    background: rgba(33, 22, 22, 0.7);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 1;
+  }
+
+
+  .category-women {
+    width: 360px;
+    height: 260px;
+  }
+  
+  .blackgirl {
+    background: rgba(33, 22, 22, 0.7);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .category-text {
+    font-size: 16px;
+    line-height: 19px;
+    color: #ffffff;
+  }
+  
+  .category-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #f16d7f;
+  } */
+}

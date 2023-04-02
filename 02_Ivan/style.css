@@ -111,7 +111,6 @@ main {
   grid-column-end: 4;
 }
 
-
 /* 2. Cтили для section blok01, накладывание картинок*/
 
 .category-women {
@@ -208,7 +207,8 @@ main {
   width: 360px;
 }
 
-.card > h2 {
+.card__title {
+  /*не надо вешать на каждый класс*/
   font-family: "Lato";
   font-style: normal;
   font-weight: 400;
@@ -220,7 +220,7 @@ main {
   margin: 25px 0 0 19px;
 }
 
-.card > p {
+.card__description {
   font-family: "Lato";
   font-style: normal;
   font-weight: 300;
@@ -232,7 +232,57 @@ main {
   margin: 16px 0 16px 19px;
 }
 
-.money {
+.card__image-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 360px;
+  height: 420px;
+  position: relative;
+  cursor: pointer;
+}
+
+.card__button {
+  display: none;
+  position: absolute;
+  width: 138px;
+  height: 43px;
+  z-index: 1;
+  background: none;
+  color: #fbfbfb;
+  border: 1px solid #FFFFFF;
+
+}
+
+.icons{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.card__image-wrapper:hover > .card__button {
+  display: block;
+
+}
+
+.card__image-wrapper:after {
+  content: 'HU';
+  display: block;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  background-color: #2A2C2F;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.card__image-wrapper:hover:after {
+  opacity: 80%;
+
+}
+
+.card__total-sum {
   font-family: "Lato";
   font-style: normal;
   font-weight: 400;
@@ -242,9 +292,9 @@ main {
   margin: 19px 0 20px 19px;
 }
 
-button {
-  grid-column-start: 1;
-  grid-column-end: 4;
+.buttonEnd {
+  grid-column-start: 2;
+  grid-column-end: 3;
   margin: 49px 0 60px 0;
   border: 1px solid #ff6a6a;
   padding: 14.5px 38.5px;
@@ -257,8 +307,136 @@ button {
   background-color: white;
 }
 
+.block03 {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  gap: 30px;
+  padding: 104px 230px 104px 230px;
+  background-color: #000000;
+}
 
+.blackCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
 
+.blackCard > img {
+  margin-bottom: 12px;
+}
+
+.blackCard > h2 {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19.96px;
+  line-height: 24px;
+  color: #fbfbfb;
+}
+.blackCard > p {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13.972px;
+  line-height: 17px;
+  text-align: center;
+  color: #fbfbfb;
+}
+
+.block04 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  /* gap: 30px; */
+  justify-items: center;
+  align-items: center;
+  background-image: url(./img/18\ fon.svg);
+  width: 1600px;
+  height: 448px;
+}
+
+.Cardblock04 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Cardblock04 > h2 {
+  margin-bottom: 15px;
+}
+
+.Cardblock04 > p {
+  margin-bottom: 32px;
+}
+
+.Cardblock04 > p,
+div {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #222224;
+}
+
+.Cardblock0401 {
+  display: flex;
+
+  /* flex-direction: row;
+  justify-content: center;
+  align-items: baseline; */
+}
+.Cardblock0401 > input {
+  background: #e1e1e1;
+  width: 256px;
+  height: 49px;
+  border: none;
+  border-radius: 50px 0 0 50px;
+  padding-left: 22px;
+
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+
+  color: #222224;
+
+  opacity: 0.67;
+}
+
+.Cardblock0401 > button {
+  background: #f16d7f;
+  width: 100px;
+  height: 49px;
+  border: none;
+  border-radius: 0 50px 50px 0;
+  padding-left: 20px;
+
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+}
+
+/* Эффекты наведения */
+
+.card:hover .overlay{
+  display: block;
+  background-color: rgba(33, 22, 22, 0.7);
+
+}
 
 
 
@@ -336,7 +514,7 @@ button {
     font-family: "Lato";
     font-style: normal;
     font-weight: 700;
-    font-size:24px;
+    font-size: 24px;
     line-height: 38px;
     color: #222222;
   }
@@ -372,19 +550,19 @@ button {
     width: 231px;
     height: 167px;
   }
-  
+
   .category-men {
     background-image: url(./img/07_OfferForMen.svg);
     width: 231px;
     height: 167px;
   }
-  
+
   .category-KIDS {
     background-image: url(./img/07_OfferForKids.svg);
     width: 231px;
     height: 167px;
   }
-  
+
   .category-ACCESORIES {
     background-image: url(./img/07_OfferAccesories.svg);
     width: 734px;
@@ -434,6 +612,10 @@ button {
     background-color: #f8f8f8;
     width: 360px;
   }
+  
+  .card__photo {
+    width: 50px;
+  }
 
   .card > h2 {
     font-family: "Lato";
@@ -458,7 +640,7 @@ button {
     flex-grow: 0;
     margin: 16px 0 16px 19px;
   }
-
+  
   .money {
     font-family: "Lato";
     font-style: normal;
@@ -469,7 +651,7 @@ button {
     margin: 19px 0 20px 19px;
   }
 
-  button {
+  .buttonEnd {
     grid-column-start: 1;
     grid-column-end: 3;
     margin: 49px 0 60px 0;
@@ -485,24 +667,17 @@ button {
   }
 }
 
-
-
-
-
-
-
 /* мобильная версия */
 
 @media (max-width: 375px) {
-
   body {
     width: 375px;
     margin: 0 auto;
     box-sizing: border-box;
   }
-  
+
   /* 1. Cтили для header mobily*/
-  
+
   header {
     display: flex;
     justify-content: center;
@@ -511,11 +686,11 @@ button {
     background: #222222;
     width: 375px;
     height: 74px;
-  }  
+  }
   .img01 {
     display: flex;
     gap: 41px;
-    margin: 18px 0 18px 16px
+    margin: 18px 0 18px 16px;
   }
   .img02 {
     display: flex;
@@ -538,9 +713,9 @@ button {
     margin: 26px 0 20px 0;
     display: none;
   }
-  
+
   /* 2. Cтили для main mobily*/
-  
+
   main {
     display: flex;
     justify-content: space-between;
@@ -548,19 +723,19 @@ button {
     height: 363px;
     width: 375px;
   }
-  
+
   .mainLeft {
     height: 363px;
     width: 375px;
     display: none;
   }
-  
+
   .mainRight {
     border-left: 12px solid #f16d7f;
     padding: 0 0 0 12px;
     margin: 148px 56px 149px 56px;
   }
-  
+
   .mainRightTex {
     display: flex;
     flex-direction: row;
@@ -583,7 +758,7 @@ button {
     line-height: 24px;
     color: #222222;
   }
-  
+
   .mainRightBottom2 {
     font-family: "Lato";
     font-style: normal;
@@ -592,9 +767,9 @@ button {
     line-height: 24px;
     color: #f16d7f;
   }
-  
+
   /* 2. Cтили для section blok01*/
-  
+
   .blok01 {
     display: grid;
     /* justify-items: center; */
@@ -604,55 +779,54 @@ button {
     gap: 32px;
     margin: 16px 64px 16px 64px;
   }
-  
+
   .category-ACCESORIES {
     grid-column-start: 1;
     grid-column-end: 2;
   }
-  
-  
+
   /* 2. Cтили для section blok01, накладывание картинок*/
-  
+
   .category-women {
     background-image: url(./img/07_OfferForWomen.svg);
     width: 343px;
     height: 247px;
   }
-  
+
   .category-men {
     background-image: url(./img/07_OfferForMen.svg);
     width: 343px;
     height: 247px;
   }
-  
+
   .category-KIDS {
     background-image: url(./img/07_OfferForKids.svg);
     width: 343px;
     height: 247px;
   }
-  
+
   .category-ACCESORIES {
     background-image: url(./img/07_OfferAccesories.svg);
     width: 343px;
     height: 111px;
   }
-  
+
   .category-text {
     font-size: 16px;
     line-height: 19px;
   }
-  
+
   .category-title {
     font-size: 18px;
     line-height: 21px;
   }
-  
+
   /* 3. Cтили для feturedShop*/
   .shop {
     margin: 6px 0 64px 0;
   }
   /* 4. Cтили для blok02*/
-  
+
   .blok02 {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 1fr);
@@ -660,21 +834,21 @@ button {
     margin: 0 8px 0 8px;
   }
 
-  button {
+  .buttonEnd {
     grid-column-start: 1;
     grid-column-end: 2;
     margin: 41px 90px 85px 74px;
     width: 211px;
     height: 47px;
   }
-  
-  .blackgirl{
-    display: block;
+
+  .blackgirl {
+    width: 50px;
     background-color: rgba(33, 22, 22, 0.7);
     z-index: 1;
-        cursor: pointer;
+    cursor: pointer;
   }
-
+  
   /* .blackgirl {
     background: rgba(33, 22, 22, 0.7);
     width: 100%;
@@ -716,6 +890,4 @@ button {
     line-height: 29px;
     color: #f16d7f;
   } */
-
-
 }
